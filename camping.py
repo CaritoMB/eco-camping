@@ -37,7 +37,7 @@ while ejecutando:
                     print (f"error: solo puede ingresar un maximo de {sitios_libres} sitios")
                 else:
                     sitios_ocupados += ingreso
-                    print (f"Ingreso registrado, se han ocupado")
+                    print (f"Ingreso registrado, se han ocupado {ingreso} sitios")
             except ValueError:
                 print ("error al ingresar cantidad de sitios")
     else:
