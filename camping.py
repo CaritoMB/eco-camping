@@ -40,5 +40,24 @@ while ejecutando:
                     print (f"Ingreso registrado, se han ocupado {ingreso} sitios")
             except ValueError:
                 print ("error al ingresar cantidad de sitios")
+    elif opcion == 3:
+        print (f"\n-- registrar salida (vehiculos o sitios ocupados): {sitios_ocupados}")
+        if sitios_ocupados == 0:
+            print ("no hay sitios ocupados, no puede ingresar una salida")
+        else:
+            try:
+                salida = int (input("¿cuantos vehiculos se retiran?: "))
+                if salida < 0:
+                    print ("error: la cantidad de salida debe ser mayor a cero")
+                elif salida > sitios_ocupados:
+                    print (f"error: no se puede retirar mas de {sitios_ocupados} vehiculos (segun los sitios ocupados)")
+                else
+                    sitios_ocupados -= salida
+                    print (f"--> Salida Registrada, se han liberado {salida} sitios")
+            except ValueError:
+                print ("Error al ingresar la salida")
+    elif opcion == 5:
+        print ("cerrando el sistema .....")
+        ejecutando = False
     else:
         print ("Opcion fuera de rango")
