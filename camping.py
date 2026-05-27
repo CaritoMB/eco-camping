@@ -56,6 +56,10 @@ while ejecutando:
                     print (f"--> Salida Registrada, se han liberado {salida} sitios")
             except ValueError:
                 print ("Error al ingresar la salida")
+    elif opcion == 4:
+        porcentaje_ocupacion = (sitios_ocupados / capacidad_maxima) * 100
+        print (f"\n[ESTADO] ocupacion actual: {sitios_ocupados} / {capacidad_maxima} sitios")
+        print (f"[ESTADO] el camping esta al {porcentaje_ocupacion:.1f}% de su capacidad")
     elif opcion == 5:
         print ("cerrando el sistema .....")
         ejecutando = False
